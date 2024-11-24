@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Tus Tarjetas</h2>
+  <ul>
+    {% for tarjeta in tarjetas %}
+      <li>{{ tarjeta.numero_tarjeta }} - {{ tarjeta.tipo }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
