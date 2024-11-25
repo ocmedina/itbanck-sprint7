@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'tipo_cliente',
     'tipo_cuenta',
     'sucursal',
-    'direccion'
+    'direccion',
+    'login'
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = '/login/'  
 LOGIN_REDIRECT_URL = '/clientes/ver_datos/' 
 LOGOUT_REDIRECT_URL = '/login/' 
+AUTH_USER_MODEL = 'login.Usuario'

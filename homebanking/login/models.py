@@ -3,7 +3,6 @@ from django.db import models
 
 class Usuario(AbstractUser):
     dni = models.CharField(max_length=10, unique=True)
-    sucursal = models.IntegerField()
 
     def __str__(self):
         return self.username
